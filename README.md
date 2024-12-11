@@ -83,7 +83,7 @@ This step-by-step setup guide builds off the SecureAgent README, found here:
 https://github.com/CoderAgent/SecureAgent/blob/main/README.md
 Common reasons why the agent is not functioning properly are in green.
  
-## Setting up and Configuring NGROK
+**Setting up and Configuring NGROK**
  
 1. Download the NGROK executable from https://download.ngrok.com/. This will be used to
 create a secure tunnel to your local server.
@@ -104,7 +104,7 @@ Note: If you Ctrl+C to close ngrok and then restart it, that will generate a bra
 means you’ll need to update the WebHook URL in your GitHub app's configuration (introduced
 in the next section).
 
-## Creating your GitHub App
+**Creating your GitHub App**
  
 5. Create a new GitHub App here: https://github.com/settings/apps
 
@@ -142,7 +142,7 @@ environment variables.)
 7. Install your GitHub app to all of your repositories by clicking the "Install App" tab from the left
 pane of the current page, and then select "All repositories."
 
- ## Setting up the SecureAgent Application
+**Setting up the SecureAgent Application**
  
 8. Open another terminal and navigate to where you’d like to clone the SecureAgent repo to.
 Then, run the following to clone it:
@@ -157,7 +157,7 @@ npm install-g npm@latest
 11. Then, run the following to install the project dependencies:
 npm install
 
-## Setting up the Environment Variables
+**Setting up the Environment Variables**
 
 12. Open the SecureAgent project in your IDE, and create a `.env` file with the following
 variables:
@@ -193,7 +193,7 @@ add .env to it, so that your environment variables do not get stored on GitHub.
 SecureAgent:
 npm run start
 
-## Creating a Pull Request to Test the Functionality
+**Creating a Pull Request to Test the Functionality**
 
 14. In another IDE window, open a JavaScript project you’ve worked on in the past.
 
