@@ -80,7 +80,9 @@ npm run start
 
 # Step-by-step setup guide builds off the SecureAgent
 This step-by-step setup guide builds off the SecureAgent README, found here:
+
 https://github.com/CoderAgent/SecureAgent/blob/main/README.md
+
 Common reasons why the agent is not functioning properly are in green.
  
 **Setting up and Configuring NGROK**
@@ -180,8 +182,7 @@ For GITHUB_APP_ID, go to https://github.com/settings/apps and click on the App y
 
 In the About section, you’ll see the App ID.
 
-For GITHUB_WEBHOOK_SECRET, this is the combination of characters you used for the
-webhook secret when creating your GitHub App in Step 5.
+For GITHUB_WEBHOOK_SECRET, this is the combination of characters you used for the webhook secret when creating your GitHub App in Step 5.
 
 For GROQ_API_KEY, create a Groq API key here: https://console.groq.com/keys. Through
 Groq, you'll have free access to the Llama and Gemini models.
