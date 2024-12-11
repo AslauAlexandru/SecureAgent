@@ -121,17 +121,17 @@ Then, complete the following:
 variables in a bit.
 
 - For the repository permissions, grant the app read & write permissions for the following:
-- Commit statuses
-- Contents
-- Issues- Pull requests
-- Webhooks
+  - Commit statuses
+  - Contents
+  - Issues- Pull requests
+  - Webhooks
 
 - Subscribe to the following events:
-- Commit comment
-- Pull request
-- Pull request review
-- Pull request review comment
-- Pull Request review thread
+  - Commit comment
+  - Pull request
+  - Pull request review
+  - Pull request review comment
+  - Pull Request review thread
 
 - Click the "Create GitHub App" button.
 
@@ -161,10 +161,12 @@ npm install
 
 12. Open the SecureAgent project in your IDE, and create a `.env` file with the following
 variables:
+```
  GITHUB_PRIVATE_KEY=
  GITHUB_APP_ID=
  GITHUB_WEBHOOK_SECRET=
  GROQ_API_KEY=
+```
 
 For GITHUB_PRIVATE_KEY, locate the .pem file that was downloaded following the creation of
 the GitHub App in Step 6, and open it in a text editor such as Notepad.
@@ -173,12 +175,17 @@ Copy and paste the entire contents of the file, beginning with-----BEGIN RSA PRI
 KEY----- and ending with-----END RSA PRIVATE KEY----
  
 Lastly, wrap the pasted contents in quotes ("---.....---").
+
 For GITHUB_APP_ID, go to https://github.com/settings/apps and click on the App you created.
+
 In the About section, you’ll see the App ID.
+
 For GITHUB_WEBHOOK_SECRET, this is the combination of characters you used for the
 webhook secret when creating your GitHub App in Step 5.
+
 For GROQ_API_KEY, create a Groq API key here: https://console.groq.com/keys. Through
 Groq, you'll have free access to the Llama and Gemini models.
+
 Note: Make sure to save this file after creating it. You’ll also want to create a .gitignore file and
 add .env to it, so that your environment variables do not get stored on GitHub.
  
@@ -195,20 +202,22 @@ git checkout-b <branch-name>
 
 16. Make changes to the project, then run the usual series of commands to push the changes to
 GitHub:
+```
 git add .
 git commit-m "..."
 git push origin <branch-name>
+```
 
-17. After pushing the changes, the terminal should output the following:
+18. After pushing the changes, the terminal should output the following:
 remote:
 remote: Create a pull request for <branch-name>' on GitHub by visiting:
-remote:
-https://github.com/<username>/<project-name>/pull/new/<branch-name>
+remote: https://github.com/<username>/<project-name>/pull/new/<branch-name>
  
 **Final Step**. Visit the link provided in the terminal and open a new pull request. Give the pull
 request a name and a description, then click “Create Pull Request.”
 
 Upon creating the pull request, you should be brought to a page that looks like this:
+
 ![image](https://github.com/user-attachments/assets/2d27fe97-4e36-4a81-a697-c5263aa941ad)
 
 
