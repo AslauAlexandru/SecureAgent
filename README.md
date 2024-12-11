@@ -209,7 +209,7 @@ git commit-m "..."
 git push origin <branch-name>
 ```
 
-18. After pushing the changes, the terminal should output the following:
+17. After pushing the changes, the terminal should output the following:
 remote:
 remote: Create a pull request for <branch-name>' on GitHub by visiting:
 remote: https://github.com/<username>/<project-name>/pull/new/<branch-name>
